@@ -1,19 +1,23 @@
 #include <stdio.h>
 
-
 int main(){
-    int n;
-    int b = 2;
-        printf("inserire un numero\n");
-        scanf("%d" , &n);
-        printf("la media è: %d\n", n);
-    while(n>=0){
+    double n;
+    double b;
+    double a;
+    double media;
+    b = 0;
 
-        printf("inserire un numero\n");
-        scanf("%d" , &n);
-        printf("la media è %d \n", media);
-        media = 
+    printf("inserire un numero\n");
+    scanf("%lf" , &n);
+
+    while(n>=0||b>)
+    { 
         b = b + 1;
+        n = n + a;
+        media = n / b;
+        printf("la media è: %lf\n", media);
+        printf("inserire un numero\n");
+        scanf("%lf" , &a);
     }
     return(0);
 }
