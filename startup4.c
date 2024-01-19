@@ -25,29 +25,29 @@ int main(){
 
     char lavoro;
     int occupazione;
-    int architetto;
+    int ingegnere;
     int informatico;
     int avvocato;
     int siono;
     siono = 1;
 
     while(siono == 1){
-        printf("A che ambito di lavoro sei interessato?\n1:Architettura\n2:Informatica\n3:Giurisprudenza\n");
+        printf("A che ambito di lavoro sei interessato?\n1:Ingegneria\n2:Informatica\n3:Giurisprudenza\n");
         scanf("%c", &lavoro);
         
         if(lavoro == '1')
         {
-            printf("Hai la possibilità di scegliere tra questi nostri architetti:\n1:Homer Simpson\n2:Barney Stinson\n3:Lupo Lucio\n\n");
-            scanf("%d", & architetto);
-            if(architetto == 1){
+            printf("Hai la possibilità di scegliere tra questi nostri ingegneri:\n1:Homer Simpson\n2:Barney Stinson\n3:Lupo Lucio\n\n");
+            scanf("%d", & ingegnere);
+            if(ingegnere == 1){
                 printf("Homer Simpson\n40 anni\nPunteggio: 52 punti\nIn classifica: secondo\nOccupazione attuale: non lavora\n\n");
                 none();
-            }else if(architetto == 2){
+            }else if(ingegnere == 2){
                 printf("Barney Stinson\n24 anni\nPunteggio: 69 punti\nIn classifica: primo\nOccupazione attuale: lavora\n\n");
                 occupato();
             
 
-            }else if(architetto == 3){
+            }else if(ingegnere == 3){
                 printf("Lupo Lucio\n24 anni\nPunteggio: 30 punti\nIn classifica: terzo\nOccupazione attuale: lavora\n\n");
                 occupato();
             
@@ -84,6 +84,8 @@ int main(){
                 occupato();
             }
         }
+        
+
         
         printf("Vuoi continuare a usufruire dei nostri servizi?\n1=si\n2=no\n");
         scanf("%d", &siono);
